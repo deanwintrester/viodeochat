@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+
+
+    <title>Chat-Doc</title>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="box col-xs-12">
+        <div class="title">
+            <h2 class="text-center"  style="color: orange;"><span style="margin-right: 10px;"><img src="static/img/intretech-logo.png" alt="Logo"  style="height: 35px; vertical-align: middle;"></span>盈小趣</h2>
+        </div>
+        <div class="answer">
+          <div id="chatWindow"></div>
+          <div class="function">
+            <div class="others">
+              <div class="left">
+                <div class="settings common dropup">
+                  <!-- <a class="dropdown-toggle icon-style" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="设置">
+                    <i class="fa fa-cogs fa-lg" aria-hidden="true"></i>
+                  </a> -->
+                  <div class="dropdown-menu" style="padding:0;" onclick="event.stopPropagation()">
+                    <div class="settings-common">
+                      <span><i class="fa fa fa-linode fa-lg" aria-hidden="true"></i>&nbsp; Language</span>
+                      <input type="file" id="files" multiple>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="right">
+                <div class="screenshot common">
+                  <a class="icon-style" title="截图保存对话"><i class="fa fa-file-image-o fa-lg" aria-hidden="true"></i></a>
+                </div>
+                <div class="delete common">
+                  <a id="chatBtn-clear" class="icon-style" title="删除历史记录"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="ipt">
+              <button id="chatBtn-recoding" class="btn recoding" type="button">开始录音</button>
+              <button id="chatBtn-stop" class="btn btn-primary" type="button">结束录音</button>
+              <span> Time <span id="time"></span></span>
+              
+              <div id="status"></div>
+              <div class="col-xs-12">
+                <textarea id="chatInput" class="form-control" rows="1"></textarea>
+                
+              </div>
+              
+              
+
+              <button id="chatBtn" class="btn btn-primary" type="button">发送</button>
+            </div>
+          </div>
+        </div>
+        <!-- <footer class="foot" style="margin-top: 20px;"> -->
+          <!-- <p class="lead text-center">“ALL IN AI”</p> -->
+          <!-- <p class="lead text-center">
+            <a href="https://baidu.com" target="_blank"><i class="fa fa-link fa-lg" aria-hidden="true"></i>&nbsp; 联系我</a> -->
+  
+            <!-- <a href="https://gitee.com/aniu-666/chat-gpt-website" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i>&nbsp; 项目地址</a> -->
+          <!-- </p> -->
+        <!-- </footer> -->
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./static/js/chat-doc-audio.js"></script>
+<script src="./static/js/jquery-2.1.1.js"></script>
+<script src="../static/js/recorder.js"></script>
+<!-- <script src="./static/js/bootstrap.min.js"></script> -->
+<script src="./static/js/html2canvas.min.js"></script>
+
+</html>
